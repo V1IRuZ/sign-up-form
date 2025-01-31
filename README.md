@@ -9,3 +9,6 @@ Image by <a href="https://pixabay.com/users/honykunst-1513263/?utm_source=link-a
 Font Banana brick by artmaker
 https://fontlibrary.org/en/font/banana-brick
 
+CSS reset
+Josh's Custom CSS Reset
+https://www.joshwcomeau.com/css/custom-css-reset/
