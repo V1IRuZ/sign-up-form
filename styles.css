@@ -51,6 +51,13 @@
     isolation: isolate;
   }
 
+  /* Custom properties */
+
+  :root {
+    --font-color: #2a3565;
+    --shadow-color: #e2bacb;
+  }
+
   /* Basic page styling */
 
 body {
@@ -67,29 +74,65 @@ body {
 /* Sidebar */
 
 .side-content {
-    background: beige url("images/astronomy.jpg");
+    background: beige url("images/nebula.jpg");
     width: 40%;
     min-height: 100vh;
 }
 
 .logo {
-    position: relative;
-    top: 260px;
-    background-color: hsla(0, 0%, 0%, 0.588);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 240px;
+  position: relative;
+  top: 160px;
+  background-color: hsla(0, 0%, 0%, 0.322);
 }
 
-img {
-    width: 200px;
+.logo img {
+  width: 200px;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 5px 5px 15px var(--shadow-color);
 }
 
-h1 {
-    font-family: "banana_brickregular", sans-serif, Arial, Helvetica;
-    color: aqua;
+.logo h1 {
+  box-shadow: 0px 0px 15px #e2bacb;
+  padding: 5px;
+  position: absolute;
+  top: 146px;
+  font-family: "banana_brickregular", sans-serif, Arial, Helvetica;
+  font-size: 2rem;
+  /* text-shadow: 2px 2px 2px #b54b4b; */
+  letter-spacing: 0.2rem;
+  background-color: white;
+  color: var(--font-color);
+  border-radius: 30px;
 }
 
 /* Form  */
 
-.form {
-    background-color: beige;
+form {
+  font-family: sans-serif, Arial, Helvetica;
+  font-weight: 900;
+  background-color: beige;
+  margin: 100px 200px 100px 40px;
+  width: 60%; 
+}
+
+form p {
+  font-size: 1.5rem;
+}
+
+form > p {
+  margin-top: 20px;
+}
+
+/* Name block */
+
+.name {
+  display: flex;
+  flex-direction: column;
 }
 
