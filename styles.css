@@ -23,7 +23,7 @@
   }
   
   body {
-    line-height: 1.5;
+    line-height: 1.2;
     -webkit-font-smoothing: antialiased;
   }
   
@@ -43,6 +43,7 @@
   p {
     text-wrap: pretty;
   }
+
   h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
   }
@@ -54,8 +55,11 @@
   /* Custom properties */
 
   :root {
+    --page-background-color: #f8f8f8;
     --font-color: #2a3565;
     --shadow-color: #e2bacb;
+    --input-gap: 50px;
+    --form-padding: 0px 200px 50px 50px;
   }
 
   /* Basic page styling */
@@ -67,14 +71,14 @@ body {
 .page {
     max-width: 1440px;
     margin: 0 auto;
-    background-color: beige;
+    background-color: var(--page-background-color);
     display: flex;
 }
 
 /* Sidebar */
 
 .side-content {
-    background: beige url("images/nebula.jpg");
+    background: url("images/nebula.jpg");
     width: 40%;
     min-height: 100vh;
 }
@@ -93,7 +97,7 @@ body {
   width: 200px;
   padding: 20px;
   border-radius: 50%;
-  background-color: hsl(0, 0%, 100%);
+  background-color: #ffffff;
   box-shadow: 5px 5px 15px var(--shadow-color);
 }
 
@@ -104,7 +108,7 @@ body {
   top: 146px;
   font-family: "banana_brickregular", sans-serif, Arial, Helvetica;
   font-size: 2rem;
-  /* text-shadow: 2px 2px 2px #b54b4b; */
+  text-shadow: 2px 2px 2px #b54b4b;
   letter-spacing: 0.2rem;
   background-color: white;
   color: var(--font-color);
@@ -116,23 +120,59 @@ body {
 form {
   font-family: sans-serif, Arial, Helvetica;
   font-weight: 900;
-  background-color: beige;
-  margin: 100px 200px 100px 40px;
+  background-color: #f8f8f8;
+  margin: 100px 0px;
   width: 60%; 
 }
 
-form p {
+/* Form intro block */
+
+.intro {
+  padding: var(--form-padding);
+  
+}
+
+.intro p {
   font-size: 1.5rem;
+  padding-bottom: 20px;
 }
 
-form > p {
-  margin-top: 20px;
+/* Form inputs block */
+
+.inputs {
+  background-color: #ffffff;
+  padding: var(--form-padding);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  box-shadow: 0px 15px 15px -15px #868686;
 }
 
-/* Name block */
+.inputs label {
+  font-size: 0.8rem;
+  color: #3e3e3e;
+}
 
-.name {
+.inputs h2 {
+  color: #3e3e3e;
+  padding-top: 20px;
+}
+
+/* Inputs name block */
+
+.name, 
+.contact,
+.passwords {
+  display: flex;
+  gap: var(--input-gap);
+}
+
+.name > div, 
+.contact > div,
+.passwords > div {
   display: flex;
   flex-direction: column;
 }
+
+/* Inputs contact block */
 
