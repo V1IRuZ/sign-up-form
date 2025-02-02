@@ -56,11 +56,13 @@
   /* Custom properties */
 
   :root {
+    --system-ui: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     --page-background-color: #f8f8f8;
     --font-color: #2a3565;
     --shadow-color: #e2bacb;
     --input-gap: 75px;
     --form-padding: 0px 200px 50px 50px;
+    --input-shadow: 1px 1px 2px;
   }
 
   /* Basic page styling */
@@ -120,7 +122,7 @@ body {
 /* Form  */
 
 form {
-  font-family: sans-serif, Arial, Helvetica;
+  font-family: var(--system-ui);
   background-color: #f8f8f8;
   margin: 100px 0px;
   width: 65%; 
@@ -138,6 +140,10 @@ form {
   font-size: 1.5rem;
   font-weight: 900;
   padding-bottom: 20px;
+}
+
+.intro span {
+  font-style: italic;
 }
 
 /* Form inputs block */
@@ -163,6 +169,28 @@ input[type] {
   height: 30px;
   border-radius: 3px;
   border: 1px solid #b6b6b6;
+}
+
+input[type]:focus {
+  border: 1px solid #6262da;
+  box-shadow: var(--input-shadow) #8b8be4;
+  outline: none;
+}
+
+input[type]:required:invalid {
+  border-color: #f03d3d;
+}
+
+input[type]:required:invalid:focus {
+  box-shadow: var(--input-shadow) #f46c6c;
+}
+
+input[type]:required:valid {
+  border-color: #21ab21;
+}
+
+input[type]:required:valid:focus {
+  box-shadow: var(--input-shadow) #29d629;
 }
 
 .inputs h2 {
@@ -195,12 +223,22 @@ input[type] {
 
 button {
   background-color: var(--font-color);
+  font-weight: 900;
   color: #f1f0f0;
   padding: 12px 40px;
   margin-bottom: 35px;
   border-style: none;
   border-radius: 10px;
   box-shadow: 2px 2px 2px #939393;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #485bad;
+}
+
+button:active {
+  background-color: #8c98cf;
 }
 
 button + p {
