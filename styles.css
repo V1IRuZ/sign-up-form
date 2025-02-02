@@ -58,7 +58,7 @@
     --page-background-color: #f8f8f8;
     --font-color: #2a3565;
     --shadow-color: #e2bacb;
-    --input-gap: 50px;
+    --input-gap: 75px;
     --form-padding: 0px 200px 50px 50px;
   }
 
@@ -87,6 +87,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 300px;
   height: 240px;
   position: relative;
   top: 160px;
@@ -149,8 +150,15 @@ form {
 }
 
 .inputs label {
-  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  font-size: 0.75rem;
   color: #3e3e3e;
+}
+
+input[type] {
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid #b6b6b6;
 }
 
 .inputs h2 {
@@ -158,7 +166,7 @@ form {
   padding-top: 20px;
 }
 
-/* Inputs name block */
+/* Inputs name, contact and passwords block */
 
 .name, 
 .contact,
@@ -174,5 +182,27 @@ form {
   flex-direction: column;
 }
 
-/* Inputs contact block */
+/* Create account button block  */
 
+.inputs + div {
+  padding: var(--form-padding);
+  padding-top: 35px;
+}
+
+button {
+  background-color: var(--font-color);
+  color: #f1f0f0;
+  padding: 12px 40px;
+  margin-bottom: 35px;
+  border-style: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px #939393;
+}
+
+button + p {
+  font-weight: 100;
+}
+
+a {
+  color: var(--font-color);
+}
