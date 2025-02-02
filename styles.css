@@ -23,7 +23,8 @@
   }
   
   body {
-    line-height: 1.2;
+    /* line-height: 1.5; normally in this CSS reset */
+    line-height: 1.2; 
     -webkit-font-smoothing: antialiased;
   }
   
@@ -79,7 +80,7 @@ body {
 
 .side-content {
     background: url("images/nebula.jpg");
-    width: 40%;
+    width: 35%;
     min-height: 100vh;
 }
 
@@ -120,10 +121,9 @@ body {
 
 form {
   font-family: sans-serif, Arial, Helvetica;
-  font-weight: 900;
   background-color: #f8f8f8;
   margin: 100px 0px;
-  width: 60%; 
+  width: 65%; 
 }
 
 /* Form intro block */
@@ -134,13 +134,16 @@ form {
 }
 
 .intro p {
+  color: #464646;
   font-size: 1.5rem;
+  font-weight: 900;
   padding-bottom: 20px;
 }
 
 /* Form inputs block */
 
 .inputs {
+  border-style: none;
   background-color: #ffffff;
   padding: var(--form-padding);
   display: flex;
@@ -152,6 +155,7 @@ form {
 .inputs label {
   letter-spacing: 0.1rem;
   font-size: 0.75rem;
+  font-weight: 900;
   color: #3e3e3e;
 }
 
