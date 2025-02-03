@@ -81,7 +81,7 @@ body {
 /* Sidebar */
 
 .side-content {
-    background: url("images/nebula.jpg");
+    background: var(--logo-blue) url("images/nebula.jpg");
     width: 35%;
 }
 
@@ -90,7 +90,7 @@ body {
   justify-content: center;
   align-items: center;
   min-width: 300px;
-  height: 240px;
+  height: 250px;
   position: relative;
   top: 160px;
   background-color: hsla(0, 0%, 0%, 0.3);
@@ -106,14 +106,12 @@ body {
 }
 
 .logo h1 {
-  /* box-shadow: 0px 0px 15px #e2bacb; */
   padding: 5px 20px;
   position: absolute;
   top: 156px;
   font-family: "xanmonoregular", var(--system-ui);
   font-size: 1.9rem;
   text-shadow: 2px 2px 2px #b54b4b;
-  /* background-color: rgba(255, 255, 255); */
   color: var(--logo-blue);
   border-radius: 30px;
 }
@@ -145,9 +143,9 @@ form {
   font-style: italic;
 }
 
-/* Form inputs block */
+/* Form inputs and labels block */
 
-.inputs {
+fieldset {
   --invalid: #f03d3d;
   --invalid-shadow: #f46c6c;
   --valid: #21ab21;
@@ -162,7 +160,7 @@ form {
   box-shadow: 0px 15px 15px -15px #868686;
 }
 
-.inputs label {
+fieldset label {
   letter-spacing: 0.1rem;
   font-size: 0.75rem;
   font-weight: 900;
@@ -212,7 +210,7 @@ input[type="password"]:required:valid:focus {
   box-shadow: var(--input-shadow) var(--valid);
 }
 
-.inputs h2 {
+fieldset h2 {
   color: #3e3e3e;
   padding-top: 20px;
 }
