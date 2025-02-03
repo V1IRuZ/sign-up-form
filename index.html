@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="page">
-        <aside class="side-content">
+        <aside class="sidebar">
             <div class="logo">
                 <img src="images/rocket-7148192_640.png" alt="rocket">
                 <h1>VIRuZ</h1>
@@ -16,7 +16,7 @@
         </aside>
         <form action="" method="get">
             <div class="intro">
-                <p>We can't offer real space travel, but instead we can create it in a simulation! Have you always dreamed of exploring the universe where no one else has been before, but you knew it was impossible at this point? We offer a solution to this problem. All you need to do is register <span>now</span> to get started!</p>
+                <p>We can't offer real space travel, but instead we can create it in a simulation! Have you always dreamed of exploring the universe where no one else has been before, but you knew it was impossible at this point? We offer a solution to this problem. All you need to do is sign up <span>now</span> to get started!</p>
                 <p>You <span>know</span> you want to!</p>
             </div>
             <fieldset>
@@ -33,7 +33,10 @@
                 </div>
                 <div class="contact">
                     <div>
-                        <label for="e-mail">EMAIL</label>
+                        <label for="e-mail">
+                            <span>EMAIL</span>
+                            <strong><span aria-label="required">*</span></strong>
+                        </label>
                         <input type="email" name="user-mail" id="e-mail" placeholder="email@email.com" required>
                     </div>
                     <div>
@@ -43,11 +46,17 @@
                 </div>
                 <div class="passwords">
                     <div>
-                        <label for="password">PASSWORD</label>
+                        <label for="password">
+                            <span>PASSWORD</span>
+                            <strong><span aria-label="required">*</span></strong> 
+                        </label>
                         <input type="password" name="user-password" id="password" minlength="6" maxlength="25" required>
                     </div>
                     <div>
-                        <label for="password-confirm">CONFIRM PASSWORD</label>
+                        <label for="password-confirm">
+                            <span>CONFIRM PASSWORD</span>
+                            <strong><span aria-label="required">*</span></strong>
+                        </label>
                         <input type="password" name="user-password" id="password-confirm" minlength="6" maxlength="25" required>
                     </div>
                 </div>

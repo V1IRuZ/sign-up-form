@@ -56,33 +56,29 @@
 
   :root {
     --system-ui: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    --page-background-color: #f8f8f8;
     --logo-blue: #2a3565;
-    --shadow-color: #e2bacb;
-    --input-gap: 75px;
     --form-padding: 0px 200px 50px 50px;
-    --input-shadow: 1px 1px 2px;
   }
 
   /* Basic page styling */
 
 body {
-    background-color: hsl(0, 0%, 15%);
-    min-height: 100vh;
+  background-color: hsl(0, 0%, 15%);
+  min-height: 100vh;
 }
 
 .page {
-    max-width: 1440px;
-    margin: 0 auto;
-    background-color: var(--page-background-color);
-    display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+  display: flex;
 }
 
 /* Sidebar */
 
-.side-content {
-    background: var(--logo-blue) url("images/nebula.jpg");
-    width: 35%;
+.sidebar {
+  background: var(--logo-blue) url("images/nebula.jpg");
+  width: 35%;
 }
 
 .logo {
@@ -101,7 +97,7 @@ body {
   padding: 20px;
   border-radius: 50%;
   background-color: #ffffff;
-  box-shadow: 5px 5px 15px var(--shadow-color);
+  box-shadow: 5px 5px 15px #e2bacb;
   opacity: 0.9;
 }
 
@@ -150,6 +146,7 @@ fieldset {
   --invalid-shadow: #f46c6c;
   --valid: #21ab21;
   --valid-shadow: #29d629;
+  --input-shadow: 1px 1px 2px;
 
   border-style: none;
   background-color: #ffffff;
@@ -221,7 +218,7 @@ fieldset h2 {
 .contact,
 .passwords {
   display: flex;
-  gap: var(--input-gap);
+  gap: 75px;
 }
 
 .name > div, 
