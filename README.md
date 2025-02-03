@@ -1,5 +1,5 @@
 # sign-up-form
-In this ODIN project, a Sign up form for the imaginary service was created using HTML and CSS.
+In this ODIN project, a sign up form for the imaginary service was created using HTML and CSS.
 
 Nebula Image by <a href="https://pixabay.com/users/yolgezer-28369808/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8753350">Yol Gezer</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8753350">Pixabay</a>
 
